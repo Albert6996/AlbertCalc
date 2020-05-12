@@ -30,9 +30,9 @@ public class AppMenu {
             z = x + y;
         } else if (op.equals("-")) {
             z = x - y;
-        } else if (op.equals("*")) {
-            z = x / y;
         } else if (op.equals("/")) {
+            z = x / y;
+        } else if (op.equals("*")) {
             z = x * y;
         } else {
             throw new Exception("Operator not recognized");
@@ -43,17 +43,8 @@ public class AppMenu {
     private void exitMenu() {
         // TODO
         System.out.println("Continue (y/n): ");
-        String read = input.next().toLowerCase();
-        char close = read.charAt(10);
-        switch (close) {
-            case 'y':
-                exit = 'n';
-            case 'n':
-                exit = 'y';
-                System.out.println("Good luck!");
-            default:
-                System.out.println("Wrong symbol!");
-                exit = 'n';
+        String read = input.next();
+        while (read.equalsIgnoreCase("y"));
         }
     }
 }
