@@ -1,0 +1,5 @@
+AppMenu.class -> C:\Program Files\Java\jdk1.8.0_241\jre\lib\rt.jar
+   lt.vtmc.ems (AppMenu.class)
+      -> java.io                                            
+      -> java.lang                                          
+      -> java.util                                          
